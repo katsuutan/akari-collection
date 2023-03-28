@@ -74,7 +74,7 @@ button {
     color: #E5E7EB;
 }
 
-button {
+.read-more {
     border: none;
     border-radius: 8px;
     padding: 5px 20px;
@@ -109,16 +109,26 @@ button {
 .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.card-button {
+    background-size: cover;
+    border: 1px solid #3882F6;
+}
+
+.card-picture {
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 /* Use to help visualize flex boxes while working */
 
-
-.main-two,
-.information-header,
 .card-container,
 .card,
 img,
+button,
 .card-subtext
 {
     border: 1px solid red;
