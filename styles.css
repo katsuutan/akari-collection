@@ -59,7 +59,7 @@ a {
 
 .main-text,
 .secondary-text,
-button {
+.read-more {
     margin: 15px 50px 15px 0;
 }
 
@@ -81,6 +81,13 @@ button {
     background: #3882F6;
     color: #E5E7EB;
     font-weight: 600;
+    transition: all 0.2s ease-in-out; /* Allows for a smoother transition to the glow effect */
+}
+
+/* Adds a glow effect on read-more button */
+.read-more:hover,
+.card-button:hover {
+    box-shadow: 0 5px 15px rgba(65, 74, 228, 0.93);
 }
 
 #img-main {
@@ -97,41 +104,40 @@ button {
     color: #1F2937;
     text-align: center;
     padding: 20px;
+    margin: 50px 20px 0 20px;
 }
 
 .card-container {
     display: flex;
     justify-content: center;
+    
     gap: 20px;
     padding: 70px;
+}
+
+.card-button {
+    padding: 0;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    width: 18%;
 }
 
-.card-button {
-    background-size: cover;
-    border: 1px solid #3882F6;
-}
-
-.card-picture {
-    display: flex;
+.card-img {
     width: 100%;
     height: auto;
 }
 
-/* Use to help visualize flex boxes while working */
-
-.card-container,
-.card,
-img,
-button,
-.card-subtext
-{
-    border: 1px solid red;
+.card-button:hover {
+    background-color: #3882F6;
 }
 
+.card-subtext {
+    text-align: center;
+}
 
+/* Use to help visualize flex boxes while working */
