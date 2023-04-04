@@ -9,17 +9,19 @@ body {
     box-sizing: border-box;
 }
 
+.main-one,
+.main-two,
+.main-three,
+.main-four {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Start of Section 1 */
 
 .align {
     margin: 0 200px;
     padding: 30px;
-}
-
-.main-one,
-.main-two {
-    display: flex;
-    flex-direction: column;
 }
 
 .main-one {
@@ -74,7 +76,8 @@ a {
     color: #E5E7EB;
 }
 
-.read-more {
+.read-more,
+.follow-button {
     border: none;
     border-radius: 8px;
     padding: 5px 20px;
@@ -94,6 +97,7 @@ a {
     width: 50%;
     height: auto;
     border-radius: 20px;
+    object-fit: cover; /* Fixes the re-sizing issue with the img by autocropping */
 }
 
 /* Start of Section 2 */
@@ -110,7 +114,6 @@ a {
 .card-container {
     display: flex;
     justify-content: center;
-    
     gap: 20px;
     padding: 70px;
 }
@@ -140,4 +143,69 @@ a {
     text-align: center;
 }
 
-/* Use to help visualize flex boxes while working */
+/* Start of Section 3 */
+
+.main-three {
+    background-color: #E5E7EB;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    margin: 170px 360px;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.quote-person {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Start of Section 4 */
+
+.call-to-action {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    margin: 75px 150px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+button.follow-button {
+    border: 2px solid #F9FaF8;
+}
+
+.CTA-header,
+.CTA-subtext,
+.follow-button {
+    color: #F9FaF8;
+}
+
+.CTA-header {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.CTA-subtext,
+.follow-button{
+    font-size: 18px;
+}
+
+/* Start of Footer */
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FaF8;
+    padding: 30px;
+    text-align: center;
+}
